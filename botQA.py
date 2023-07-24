@@ -100,10 +100,10 @@ class QA():
         template ="""Ricerca le informazioni per rispondere alle mie domande solo dai documenti forniti e dalle conversazioni precedenti avute con me in chat history, 
          se non trovi corrispondenze rispondi con 'no sacc'.
 {context}
-
+{chat_history}
 Human: {question}
 Assistant:"""
-        prompt = PromptTemplate(input_variables=['question','context'],
+        prompt = PromptTemplate(input_variables=['question','context','chat_history'],
                                      template=template)
         return prompt
      
