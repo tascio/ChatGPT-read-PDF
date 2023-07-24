@@ -4,3 +4,5 @@ Small script to chat with your pdf with personal prompt template and static memo
 I used Chroma to vectorize and Spacy for an Italian dataset language
 
 Remember that the chat history wants a tuple of conversations!
+
+You just need to set a dir to save locally vector index, a dir to save locally chat history and set you OpenAI Key
